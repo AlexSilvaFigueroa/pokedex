@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import Pokedex from './views/Pokedex'
+import Pokedex from './presentation/views/Pokedex'
 
 test('renders learn react link', () => {
   render(<Pokedex />)
