@@ -1015,7 +1015,7 @@
     core-js-pure "^3.19.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
   integrity sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==
@@ -1351,6 +1351,11 @@
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
+
+"@rtsao/csstype@2.6.5-forked.0":
+  version "2.6.5-forked.0"
+  resolved "https://registry.yarnpkg.com/@rtsao/csstype/-/csstype-2.6.5-forked.0.tgz#b5b4e2a07ad83a91874ebf5fabdb73dc8c1632f6"
+  integrity sha512-0HwnY8uPWcCloTgdbbaJG3MbDUfNf6yKWZfCKxFv9yj2Sbp4mSKaIjC7Cr/5L4hMxvrrk85CU3wlAg7EtBBJ1Q==
 
 "@rushstack/eslint-patch@^1.1.0":
   version "1.1.0"
@@ -1820,6 +1825,28 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
+"@types/styletron-engine-atomic@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@types/styletron-engine-atomic/-/styletron-engine-atomic-1.1.1.tgz#032dabd5ccea1b8601521ad38616a7a9f0af5404"
+  integrity sha512-Jthl51uLiVZHkY0HRBGtDOjjtI4H0nYaERZtzzdDgnJSa+PqQG55ScMQPmSAu6ikzYWp6+jJbbtuIX+TqVfFeg==
+  dependencies:
+    "@types/styletron-standard" "*"
+
+"@types/styletron-react@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@types/styletron-react/-/styletron-react-5.0.3.tgz#54d6e9acefb692355b35132b9f5276cc5cac00f6"
+  integrity sha512-mNM8WrFrCYWXNxudjdMMeHZmGdXLfVF/fQmj1Qnz7E99niL2d7IcQubbx731FX3YEVGoF9Au1J6uBkPoEzqypw==
+  dependencies:
+    "@types/react" "*"
+    "@types/styletron-standard" "*"
+
+"@types/styletron-standard@*", "@types/styletron-standard@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/styletron-standard/-/styletron-standard-2.0.2.tgz#1e4f1977555e0b4612af0f5f420e8c777640b124"
+  integrity sha512-ZpPB8k2Yhskq/oggg2wjWeP/bBxRDfwIzRrHbdksVOQXfHOLf4rRqs2tlWLK/NRJvWU3E3MlXeNcoVSZjuAPiQ==
+  dependencies:
+    csstype "^3.0.2"
+
 "@types/testing-library__jest-dom@^5.9.1":
   version "5.14.2"
   resolved "https://registry.yarnpkg.com/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.14.2.tgz#564fb2b2dc827147e937a75b639a05d17ce18b44"
@@ -1851,7 +1878,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@^5.5.0":
+"@typescript-eslint/eslint-plugin@^5.5.0", "@typescript-eslint/eslint-plugin@^5.8.1":
   version "5.8.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.8.1.tgz#97dfaa39f38e99f86801fdf34f9f1bed66704258"
   integrity sha512-wTZ5oEKrKj/8/366qTM366zqhIKAp6NCMweoRONtfuC07OAU9nVI2GZZdqQ1qD30WAAtcPdkH+npDwtRFdp4Rw==
@@ -1877,7 +1904,7 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^5.5.0":
+"@typescript-eslint/parser@^5.5.0", "@typescript-eslint/parser@^5.8.1":
   version "5.8.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.8.1.tgz#380f5f1e596b540059998aa3fc80d78f0f9b0d0a"
   integrity sha512-K1giKHAjHuyB421SoXMXFHHVI4NdNY603uKw92++D3qyxSeYvC10CBJ/GE5Thpo4WTUvu1mmJI2/FFkz38F2Gw==
@@ -2343,6 +2370,11 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+atomize@^1.0.28:
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/atomize/-/atomize-1.0.28.tgz#80bd2d03cd4bcb168223747948ed1f92015d9a80"
+  integrity sha512-JSvmWzin/0vRl2KsPo7snb5A1HlyPJK3yEFH8o7RxWsduXIrjdb4Wg2DxzSWRyPDi95YLjuUuWtbftlU/ny9YQ==
 
 autoprefixer@^10.4.0:
   version "10.4.1"
@@ -3021,6 +3053,14 @@ css-has-pseudo@^3.0.0:
   dependencies:
     postcss-selector-parser "^6.0.8"
 
+css-in-js-utils@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-2.0.1.tgz#3b472b398787291b47cfe3e44fecfdd9e914ba99"
+  integrity sha512-PJF0SpJT+WdbVVt0AOYp9C8GnuruRlL/UFW7932nLWmFLQTaWEzTBQEx7/hn4BuV+WON75iAViSUJLiU3PKbpA==
+  dependencies:
+    hyphenate-style-name "^1.0.2"
+    isobject "^3.0.1"
+
 css-loader@^6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-6.5.1.tgz#0c43d4fbe0d97f699c91e9818cb585759091d1b1"
@@ -3426,6 +3466,14 @@ dom-converter@^0.2.0:
   dependencies:
     utila "~0.4"
 
+dom-helpers@^5.0.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
+  integrity sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    csstype "^3.0.2"
+
 dom-serializer@0:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.2.2.tgz#1afb81f533717175d478655debc5e332d9f9bb51"
@@ -3660,6 +3708,11 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
+eslint-config-prettier@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
+  integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
+
 eslint-config-react-app@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-7.0.0.tgz#0fa96d5ec1dfb99c029b1554362ab3fa1c3757df"
@@ -3749,12 +3802,19 @@ eslint-plugin-jsx-a11y@^6.5.1:
     language-tags "^1.0.5"
     minimatch "^3.0.4"
 
+eslint-plugin-prettier@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.0.0.tgz#8b99d1e4b8b24a762472b4567992023619cb98e0"
+  integrity sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==
+  dependencies:
+    prettier-linter-helpers "^1.0.0"
+
 eslint-plugin-react-hooks@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz#318dbf312e06fab1c835a4abef00121751ac1172"
   integrity sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA==
 
-eslint-plugin-react@^7.27.1:
+eslint-plugin-react@^7.27.1, eslint-plugin-react@^7.28.0:
   version "7.28.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.28.0.tgz#8f3ff450677571a659ce76efc6d80b6a525adbdf"
   integrity sha512-IOlFIRHzWfEQQKcAD4iyYDndHwTQiCMcJVJjxempf203jnNLUnW34AXLrV33+nEXoifJE2ZEGmcjKPL8957eSw==
@@ -3825,7 +3885,7 @@ eslint-webpack-plugin@^3.1.1:
     normalize-path "^3.0.0"
     schema-utils "^3.1.1"
 
-eslint@^8.3.0:
+eslint@^8.3.0, eslint@^8.5.0:
   version "8.5.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.5.0.tgz#ddd2c1afd8f412036f87ae2a063d2aa296d3175f"
   integrity sha512-tVGSkgNbOfiHyVte8bCM8OmX+xG9PzVG/B4UCF60zx7j61WIVY/AqJECDgpLD4DbbESD0e174gOg3ZlrX15GDg==
@@ -4004,6 +4064,11 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
+
+fast-diff@^1.1.2:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
+  integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
 
 fast-glob@^3.1.1, fast-glob@^3.2.7:
   version "3.2.7"
@@ -4551,6 +4616,11 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
+hyphenate-style-name@^1.0.2:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
+  integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -4659,6 +4729,13 @@ ini@^1.3.5:
   version "1.3.8"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
   integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
+
+inline-style-prefixer@^5.1.0:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-5.1.2.tgz#e5a5a3515e25600e016b71e39138971228486c33"
+  integrity sha512-PYUF+94gDfhy+LsQxM0g3d6Hge4l1pAqOSOiZuHWzMvQEGsbRQ/ck2WioLqrY2ZkHyPgVUXxn+hrkF7D6QUGbA==
+  dependencies:
+    css-in-js-utils "^2.0.0"
 
 internal-slot@^1.0.3:
   version "1.0.3"
@@ -4882,6 +4959,11 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
+
+isobject@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
+  integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
 istanbul-lib-coverage@^3.0.0, istanbul-lib-coverage@^3.2.0:
   version "3.2.0"
@@ -6799,6 +6881,18 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
+prettier-linter-helpers@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz#d23d41fe1375646de2d0104d3454a3008802cf7b"
+  integrity sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==
+  dependencies:
+    fast-diff "^1.1.2"
+
+prettier@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
 pretty-bytes@^5.3.0, pretty-bytes@^5.4.1:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-5.6.0.tgz#356256f643804773c82f64723fe78c92c62beaeb"
@@ -6847,7 +6941,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.0.tgz#d237e624c45a9846e469f5f31117f970017ff588"
   integrity sha512-fDGekdaHh65eI3lMi5OnErU6a8Ighg2KjcjQxO7m8VHyWjcPyj5kiOgV1LQDOOOgVy3+5FgjXvdSSX7B8/5/4g==
@@ -7048,6 +7142,16 @@ react-scripts@5.0.0:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-transition-group@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
+  integrity sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    dom-helpers "^5.0.1"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
 
 react@^17.0.2:
   version "17.0.2"
@@ -7786,6 +7890,30 @@ stylehacks@^5.0.1:
   dependencies:
     browserslist "^4.16.0"
     postcss-selector-parser "^6.0.4"
+
+styletron-engine-atomic@^1.4.8:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/styletron-engine-atomic/-/styletron-engine-atomic-1.4.8.tgz#3cab053e6d8e930fc2cd3f36dfbda1e9da8576ae"
+  integrity sha512-KLyDkigcIrIMzUlX0usBfO/BBwnh1yC/48+DqP4LSZn8UgGP00oStxoezAH8pYhal1amvBJ7tLVs7tNZDUTAdg==
+  dependencies:
+    inline-style-prefixer "^5.1.0"
+    styletron-standard "^3.0.5"
+
+styletron-react@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/styletron-react/-/styletron-react-6.0.2.tgz#c45cb7c1860176b0adcea61c1f081256e522e811"
+  integrity sha512-xMRnM8CUMbo8q/7BQlh7DfmNB0SDFixIHpzGqdfia9QF+haU/z+podgcJvnA4BWG6Gt2ZmrxZ6Qhrfvaalcyyg==
+  dependencies:
+    prop-types "^15.6.0"
+    styletron-standard "^3.0.5"
+
+styletron-standard@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/styletron-standard/-/styletron-standard-3.0.5.tgz#35dd4a584d668ef73b145988cdbece69a1e39085"
+  integrity sha512-0paxpsQg2QnlapGLnM49yEPZ015VEi/ovys9Hu0wBduimKshYUZLLl1Emfs5jx1LHVXrDn4j+DYVclJGWJC7Jw==
+  dependencies:
+    "@rtsao/csstype" "2.6.5-forked.0"
+    inline-style-prefixer "^5.1.0"
 
 supports-color@^5.3.0:
   version "5.5.0"
