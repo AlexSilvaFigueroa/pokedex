@@ -1,47 +1,28 @@
+import { AxiosResponse } from 'axios'
 import React, { useState, useEffect } from 'react'
-import { Div, Button, Notification } from 'atomize'
-import { onGetAllPokemons } from '../../../data/storage/PokemonStorage'
+import {
+  onGetPokemons,
+  onGetPokemonByName,
+} from '../../../data/storage/PokemonStorage'
 
 const Pokedex = () => {
-  const [onClick, setOnClick] = useState(false)
-  const [response, setResponse] = useState(null)
-
-  const onGetPokemons = async () => {
-    const {
-      data: { results },
-    } = await onGetAllPokemons()
-    setResponse(results)
-    console.log(response)
-  }
+  const [response, setResponse] = useState<AxiosResponse | null | void>(null)
 
   useEffect(() => {
-    onGetPokemons()
+    ;(async () => {
+      try {
+        const pokemonResponse: any = await onGetPokemonByName('charmander')
+        setResponse(pokemonResponse)
+      } catch (e) {
+        console.error(e)
+      }
+    })()
   }, [])
 
-  const showSnackbar = () => {
-    setOnClick(true)
-  }
-  const closeSnackbar = () => {
-    setOnClick(false)
-  }
   return (
-    <Div>
+    <div>
       <h1>Pokedex</h1>
-      <h2>Soon</h2>
-      <Button bg="danger700" onClick={showSnackbar}>
-        Click on me please
-      </Button>
-      <Notification bg="danger700" isOpen={onClick} onClose={closeSnackbar}>
-        Thank you!
-      </Notification>
-      <ul>
-        {response &&
-          response.map((element, index) => (
-            <li key={`pokemon-${index}`}>{element.name}</li>
-          ))}
-      </ul>
-    </Div>
+    </div>
   )
 }
-
 export default Pokedex

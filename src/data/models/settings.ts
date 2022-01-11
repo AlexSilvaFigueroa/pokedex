@@ -1,3 +1,3 @@
 export enum path {
-  getPokemons = 'pokemon',
+  getPokemons = '/pokemon',
 }

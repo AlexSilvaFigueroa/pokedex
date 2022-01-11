@@ -1,12 +1,12 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
 
-const configuaration: AxiosRequestConfig = {
-  baseURL: process.env.REACT_APP_API_URL,
-  timeout: 5000,
+const configuration: AxiosRequestConfig = {
+  baseURL: process.env.REACT_APP_API_URL, //REACT_APP_API_URL="https://pokeapi.co/api/v2"
+  timeout: 10000,
 }
 
-const client: AxiosInstance = axios.create(configuaration)
+const client: AxiosInstance = axios.create(configuration)
 
-client.defaults.headers['Content-type'] = 'application/json'
+client.defaults.headers['Content-Type'] = 'application/json'
 
 export default client
