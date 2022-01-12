@@ -11,5 +11,5 @@ export const getAllPokemons = () =>
 export const getPokemonByName: Helper<any> = ({ pokemonName }) =>
   client({
     url: `${path.getPokemons}/${pokemonName}`,
-    method: 'get',
+    method: 'GET',
   })

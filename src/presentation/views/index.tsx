@@ -1,6 +1,6 @@
 import React from 'react'
-import Pokedex from './Pokedex'
+import PokemonView from './PokemonView'
 
-const App = () => <Pokedex />
+const App = () => <PokemonView />
 
 export default App

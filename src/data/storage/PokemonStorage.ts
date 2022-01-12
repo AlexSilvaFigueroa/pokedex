@@ -15,7 +15,19 @@ export const onGetPokemonByName = async (pokemonName: string): Promise<any> => {
     const { data } = await getPokemonByName({
       pokemonName,
     })
-    return data
+    const parsedData = {
+      id: data.id,
+      name: data.name,
+      sprites: data.sprites,
+      abilities: data.abilities,
+      stats: data.stats,
+      dimensions: {
+        weight: data.weight,
+        height: data.height,
+      },
+      types: data.types,
+    }
+    return parsedData
   } catch (e) {
     throw new Error('Ups! We had a problem: ' + e)
   }
