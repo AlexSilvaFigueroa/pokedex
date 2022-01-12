@@ -6,13 +6,14 @@ import {
 } from '../../../data/storage/PokemonStorage'
 
 const Pokedex = () => {
-  const [response, setResponse] = useState<AxiosResponse | null | void>(null)
+  const [response, setResponse] = useState(null)
 
   useEffect(() => {
     ;(async () => {
       try {
         const pokemonResponse: any = await onGetPokemonByName('charmander')
         setResponse(pokemonResponse)
+        response && console.log(response)
       } catch (e) {
         console.error(e)
       }

@@ -1,5 +1,6 @@
 import { path } from '../models/settings'
 import client from '../api'
+import { Helper } from '../../domain/interfaces/RequestInterface'
 
 export const getAllPokemons = () =>
   client({
@@ -7,9 +8,8 @@ export const getAllPokemons = () =>
     method: 'GET',
   })
 
-export const getPokemonByName = ({ pokemonName }) => {
+export const getPokemonByName: Helper<any> = ({ pokemonName }) =>
   client({
     url: `${path.getPokemons}/${pokemonName}`,
     method: 'get',
   })
-}
